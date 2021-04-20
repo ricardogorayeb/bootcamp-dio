@@ -1,0 +1,6 @@
+/build
+/build/generated/source/buildConfig/debug/
+/build/generated/ap_generated_sources/debug/out/
+/build/generated/res/resValues/debug/
+/.idea/
+*.iml
