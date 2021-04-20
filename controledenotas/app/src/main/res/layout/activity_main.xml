@@ -15,7 +15,7 @@
         android:background="@android:color/darker_gray"
         android:ems="10"
         android:hint="Nota1"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:padding="20dp"
         app:layout_constraintBottom_toTopOf="@+id/nota2"
         app:layout_constraintEnd_toEndOf="parent"
