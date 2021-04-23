@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">imc-app</string>
+    <string name="ola_checkbox">ola checkbox</string>
+    <string name="ola_radio_button">ola radio button</string>
+    <string name="ola_helloworld">Hello World!</string>
+    <string name="imc">IMC</string>
+    <string name="peso_ex_70_kg">Peso (Ex. 70 kg)</string>
+    <string name="altura_ex_1_68_m">Altura (Ex. 1.68 m)</string>
+    <string name="calcular">Calcular</string>
 </resources>
