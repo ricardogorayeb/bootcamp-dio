@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/pesoEDT"
+        android:hint="@string/peso_ex_70_kg"
+        android:layout_below="@id/titleView"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/input_style" />
+
+    <EditText
+        android:id="@+id/alturaEDT"
+        android:layout_below="@id/pesoEDT"
+        android:layout_alignStart="@id/pesoEDT"
+        android:layout_alignEnd="@id/pesoEDT"
+        android:hint="@string/altura_ex_1_68_m"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/input_style" />
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:textStyle="bold"
+        style="@style/style_purple"
+        android:text="@string/imc" />
+
+
+    <Button
+        android:id="@+id/Calcula IMC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/alturaEDT"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="408dp"
+        android:text="@string/calcular" />
+
+</RelativeLayout>
