@@ -35,10 +35,9 @@
 
 
     <Button
-        android:id="@+id/Calcula IMC"
+        android:id="@+id/CalculaIMC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:layout_below="@+id/alturaEDT"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="408dp"
