@@ -33,7 +33,6 @@
         style="@style/input_style" />
 
     <Button
-        android:id="@+id/Calcula IMC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/calcular" />
