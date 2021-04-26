@@ -50,7 +50,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/Calcula_IMC"
+        android:id="@+id/CalculaIMC"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/calcular"
@@ -59,6 +59,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/alturaEDT" />
 
+    <TextView
+        android:id="@+id/resultadoIMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="191dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
