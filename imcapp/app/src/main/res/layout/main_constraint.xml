@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/relativeLayout"
+    android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -14,44 +14,51 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_marginHorizontal="48dp"
-        android:layout_marginStart="64dp"
         android:hint="@string/peso_ex_70_kg"
+        android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.635"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.517" />
+        app:layout_constraintVertical_bias="0.35000002" />
 
     <EditText
         android:id="@+id/alturaEDT"
         style="@style/input_style"
         android:layout_width="0dp"
+        android:inputType="numberDecimal"
         android:layout_height="wrap_content"
         android:hint="@string/altura_ex_1_68_m"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pesoEDT" />
 
+
     <TextView
         android:id="@+id/titleView"
-        tools:visibility="gone"
         style="@style/style_purple"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/imc"
+        android:textAlignment="center"
         android:textSize="48dp"
         android:textStyle="bold"
-        />
-
+        app:layout_constraintBottom_toTopOf="@+id/pesoEDT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/Calcula IMC"
-        tools:visibility="gone"
+        android:id="@+id/Calcula_IMC"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/calcular"
-        />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alturaEDT" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
