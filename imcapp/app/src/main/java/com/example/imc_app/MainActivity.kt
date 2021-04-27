@@ -16,7 +16,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setListeners() {
-
         alturaEDT?.doAfterTextChanged { text ->
           //  Toast.makeText(this, text.toString()"", Toast.LENGTH_SHORT).show()
         }
