@@ -20,7 +20,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/tv_name"
             tools:src="@tools:sample/avatars"
-            tools:ignore="ContentDescription"/>
+            android:contentDescription="@string/iv_photograph_content_description"/>
 
 
         <TextView
