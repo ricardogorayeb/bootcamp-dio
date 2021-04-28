@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
     private val adapter = ContactAdapter()
 
     override fun onCreate(savedInstanceState: Bundle?) {
-       super.onCreate(savedInstanceState)
+        super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         bindViews()
         updateList()
@@ -32,11 +32,13 @@ class MainActivity : AppCompatActivity() {
                                 name="Ricardo Gorayeb",
                                 phone = "(00) 0000-0000",
                                 photograph = "img.png"
+                        ),
+                        Contact(
+                                name="Kellen Gorayeb",
+                                phone = "(00) 0000-0000",
+                                photograph = "img.png"
                         )
                 )
         )
     }
-
-
-
 }

@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.core.content.contentValuesOf
 import androidx.recyclerview.widget.RecyclerView
 
 class ContactAdapter : RecyclerView.Adapter<ContactAdapter.ContactAdapterViewHolder>() {
@@ -32,9 +33,9 @@ class ContactAdapter : RecyclerView.Adapter<ContactAdapter.ContactAdapterViewHol
     }
 
     class ContactAdapterViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        private val tvName: TextView = itemView.findViewById(R.id.iv_name)
-        private val tvPhone: TextView = itemView.findViewById(R.id.iv_phone)
-        private val tvPhotograph: TextView = itemView.findViewById(R.id.iv_photograph)
+        private val tvName: TextView = itemView.findViewById(R.id.tv_name)
+        private val tvPhone: TextView = itemView.findViewById(R.id.tv_phone)
+       // private val tvPhotograph: TextView = itemView.findViewById(R.id.iv_photograph)
 
         fun bind(contact: Contact) {
             tvName.text = contact.name
