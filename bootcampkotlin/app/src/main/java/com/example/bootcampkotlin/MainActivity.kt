@@ -2,6 +2,8 @@ package com.example.bootcampkotlin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuInflater
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -18,6 +20,8 @@ class MainActivity : AppCompatActivity() {
         bindViews()
         updateList()
     }
+
+
 
     private fun bindViews() {
         rvList.adapter = adapter
@@ -41,4 +45,12 @@ class MainActivity : AppCompatActivity() {
                 )
         )
     }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        val inflater : MenuInflater = menuInflater
+        inflater.inflate(R.menu.menu, menu)
+        return true
+    }
+
+
 }
