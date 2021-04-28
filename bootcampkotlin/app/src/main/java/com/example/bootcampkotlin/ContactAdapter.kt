@@ -4,7 +4,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import androidx.core.content.contentValuesOf
 import androidx.recyclerview.widget.RecyclerView
 
 class ContactAdapter : RecyclerView.Adapter<ContactAdapter.ContactAdapterViewHolder>() {
@@ -29,7 +28,7 @@ class ContactAdapter : RecyclerView.Adapter<ContactAdapter.ContactAdapterViewHol
     fun updateList(list: List<Contact>) {
         this.list.clear()
         this.list.addAll(list)
-        motifyDataSetChanged()
+        notifyDataSetChanged()
     }
 
     class ContactAdapterViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -39,7 +38,7 @@ class ContactAdapter : RecyclerView.Adapter<ContactAdapter.ContactAdapterViewHol
 
         fun bind(contact: Contact) {
             tvName.text = contact.name
-            tvName.text = contact.phone
+            tvPhone.text = contact.phone
         }
 
     }

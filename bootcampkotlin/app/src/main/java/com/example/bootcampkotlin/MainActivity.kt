@@ -13,9 +13,10 @@ class MainActivity : AppCompatActivity() {
     private val adapter = ContactAdapter()
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+       super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         bindViews()
+        updateList()
     }
 
     private fun bindViews() {
@@ -23,4 +24,19 @@ class MainActivity : AppCompatActivity() {
         rvList.layoutManager = LinearLayoutManager(this)
 
     }
+
+    private fun updateList() {
+        adapter.updateList(
+                arrayListOf(
+                        Contact(
+                                name="Ricardo Gorayeb",
+                                phone = "(00) 0000-0000",
+                                photograph = "img.png"
+                        )
+                )
+        )
+    }
+
+
+
 }

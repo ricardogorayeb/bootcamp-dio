@@ -1,8 +1,7 @@
 package com.example.bootcampkotlin
 
-data class Contact {
+data class Contact (
     var name: String,
     var phone: String,
     var photograph: String
-
-}
+)
