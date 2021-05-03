@@ -19,8 +19,8 @@ class NotesProvider : ContentProvider() {
 
     override fun onCreate(): Boolean {
         mUriMatcher = UriMatcher(UriMatcher.NO_MATCH)
-        mUriMatcher.addURI(AUTHORITY, path:"notes", NOTES)
-        mUriMatcher.addURI(AUTHORITY, path:"notes/#", NOTES_BY_ID)
+        mUriMatcher.addURI(AUTHORITY, path="notes", NOTES)
+        mUriMatcher.addURI(AUTHORITY, path="notes/#", NOTES_BY_ID)
         IF (context != null) {
             dbHelper = NotesDatabaseHelper(context as Context)
         }
@@ -64,7 +64,7 @@ class NotesProvider : ContentProvider() {
 
     companion object {
         const val AUTHORITY = "com.example.contentprovider.provider"
-        val BASE_URI = Uri.parse(uriString: "content://$AUTHORITY")
+        val BASE_URI = Uri.parse(uriString= "content://$AUTHORITY")
         val URI_NOTES = Uri.withAppendedPath(BASE_URI, pathSegment: "notes")
         const val NOTES = 1
         const val NOTES_BY_ID = 2
